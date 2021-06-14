@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+ <!--breadcrum-->
+ <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url('{% static 'website/img/bg-img/i.jpg' %}');">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12">
+        <h2 class="title">ABOUT</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="breadcumb--con">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--content section-->
+ <!-- ***** Service Start ***** -->
+ <section class="dentist-area section-padding-200-0">
+  <div class="container">
+    <div class="row">
+      <!-- Section Heading -->
+      <div class="col-12">
+        <div class="section-heading text-center">
+          <h2>KYAKAMEENA CARE CENTER</h2>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Single team Area -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="dentist-info text-center">
+          <h6>WHO ARE WE</h6>
+          <hr>
+        </div>
+        <div class=" mb-100 text-center">
+          <p>We are a team of highly experienced professionals who give first rate care and personal service to those needing short-term or long-term care.</p>
+          <!-- Content -->
+          <div class="dentist-content">
+            <!-- Info -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Single team Area -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="dentist-info text-center">
+          <h6>OUR MISSION</h6>
+          <hr>
+        </div>
+        <div class=" mb-100 text-center">
+          <p>We provide a personalized plan of care with the physician to provide Nursing and Rehab Services to help our patients transition from the hospital to their home.</p>
+          <!-- Content -->
+          <div class="dentist-content">
+            <!-- Info -->
+          </div>
+        </div>
+      </div>
+
+            <!-- Single team Area -->
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="dentist-info text-center">
+                <h6>WHAT WE DO</h6>
+                <hr>
+              </div>
+              <div class=" mb-100 text-center">
+                <p>We serve our clients with Post Acute rehabilitation and nursing services with the focus on helping our patients transition from the hospital to home.</p>
+                <!-- Content -->
+                <div class="dentist-content">
+                  <!-- Info -->
+                </div>
+              </div>
+            </div>
+            <!--end-->
+    </div>
+  </div>
+</section>
+<!-- ***** Team Area End ***** -->
+<!--our story-->
+
+<section class="dento-about-us-area section-padding-200-0">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- About Us Thumbnail -->
+      <div class="col-12 col-md-6">
+        <div class="about-us-thumbnail mb-50">
+          <img src="{% static 'website/img/bg-img/h.jpg' %}" alt="">
+          
+        </div>
+        <div class="about-us-thumbnail mb-50">
+          <img src="{% static 'website/img/bg-img/i.jpg' %}" alt="">
+          
+        </div>
+      </div>
+      <!-- About Content -->
+      <div class="col-12 col-md-6">
+        <div class="about-us-content mb-50">
+          <!-- Section Heading -->
+          <div class="section-heading">
+            <h2>Our Story</h2>
+            <div class="line"></div>
+          </div>
+          <p>
+            Elmwood Nursing and Rehabilitation Center is proud to have been serving the San Francisco East Bay area since 1965. Elmwood is committed to high quality patient care and satisfaction.</p>
+ 
+<p>   Often the transition to a skilled nursing facility is challenging. At Elmwood Nursing and Rehabilitation Center, we strive to ease the process by providing an environment where patients and guests feel informed and comfortable.</p>      
+                        
+        <p>  In addition to nurses and staff who are always available to answer questions and lend a hand, each patient is paired with a coordinator, to help ease transition and provide a familiar smiling face.</p>  
+            
+             
+            
+        <p>  A team of qualified professionals helps patients recover from surgery, injury or serious illness. They understand the importance of creating a comfortable and nurturing atmosphere, whether patients stay for short-term treatment or long-term care. </p>   
+          
+        </div>
+        <a href="{% url 'services' %}" class="btn dento-btn booking-btn">Our Services</a>
+        <br/> <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--our story section end-->
+
+
+<!--Why choose us section-->
+
+<section class="dento-about-us-area section-padding-300-0">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- About Content -->
+      <div class="col-12 col-md-6">
+        <div class="about-us-content mb-50">
+          <!-- Section Heading -->
+          <div class="section-heading">
+            <h2>Why Choose Us?</h2>
+            <div class="line"></div>
+          </div>
+<p>
+  At Elmwood Nursing and Rehabilitation Center, caring is our main concern. Our organization is built on the premise that the most effective way to provide compassionate care is to:
+</p>
+<p>
+  Maintain high medical integrity
+</p>
+<hr>
+<p>
+  Foster a team spirit among staff
+</p>
+<hr>
+<p>
+  Create friendly, beautiful surroundings for our patients and their visitors
+</p>
+<hr>
+        </div>
+        <a href="{% url 'services' %}" class="btn dento-btn booking-btn">Our Services</a>
+        <br/> <br>
+      </div>
+      
+
+      <!-- About Us Thumbnail -->
+      <div class="col-12 col-md-6">
+        <div class="about-us-thumbnail mb-50">
+          <img src="{% static 'website/img/bg-img/k.jpg' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Why choose us section end-->
+
+
+<!--Come for a visit section-->
+
+<section class="dento-about-us-area section-padding-200-0">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- About Us Thumbnail -->
+      <div class="col-12 col-md-6">
+        <div class="about-us-thumbnail mb-50">
+          <img src="{% static 'website/img/bg-img/b.jpg' %}" alt="">
+          
+        </div>
+      </div>
+      <!-- About Content -->
+      <div class="col-12 col-md-6">
+        <div class="about-us-content mb-50">
+          <!-- Section Heading -->
+          <div class="section-heading">
+            <h2>Come By For A Visit</h2>
+            <div class="line"></div>
+          </div>
+          <p>
+            Visitors are welcome every day of the week. Come see our residents and friendly staff in action. Feel free to check out our video tour or contact us to learn more about the unique, sophisticated healthcare environment at Elmwood Nursing and Rehabilitation Center.  </p>   
+          
+        </div>
+        <a href="{% url 'contact' %}" class="btn dento-btn booking-btn">Contact Us</a>
+        <br/> <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Come for a visit section end-->
+
+
+{% endblock %}

@@ -1,0 +1,226 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static 'website/img/bg-img/v.jpg' %}" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="welcome-text text-center">
+              <h2 data-animation="fadeInDown" data-delay="100ms" class="text">Welcome to Kyakameena Care Center <style></style></h2>
+              <div class="welcome-btn-group">
+                <a href="{% url 'services' %}" id="text-border" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="300ms">OUR SERVICES</a>
+                <a href="{% url 'contact' %}" id="text-border" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="500ms">CONTACT US</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'website/img/bg-img/w.jpg' %}" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="welcome-text text-center">
+              <h2 data-animation="fadeInDown" data-delay="100ms" class="text">Welcome to Kyakameena Care Center</h2>
+              <div class="welcome-btn-group">
+                <a href="{% url 'services' %}" id="text-border" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="300ms">OUR SERVICES</a>
+                <a href="{% url 'contact' %}" id="text-border" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="500ms">CONTACT US</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'website/img/bg-img/u.jpg' %}" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="welcome-text text-center">
+              <h2 data-animation="fadeInDown" data-delay="100ms" class="text">We Believe Everyone Should Have Easy Access To Great Health Care</h2>
+              <div class="welcome-btn-group">
+                <a href="{% url 'services' %}" id="text-border" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="300ms">OUR SERVICES</a>
+                <a href="{% url 'contact' %}" id="text-border" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="500ms">CONTACT US</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+  </section>
+  <!-- ***** Welcome Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  <section class="dento-about-us-area section-padding-100-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-thumbnail mb-50">
+            <img src="{% static 'website/img/bg-img/h.jpg' %}" alt="">
+          </div>
+        </div>
+        <!-- About Content -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-content mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>About Us</h2>
+              <div class="line"></div>
+            </div>
+            <p>We are a team of highly experienced professionals who give first rate care and personal service to those needing short-term or long-term care.</p>
+            <p>We provide a personalized plan of care with the physician to provide Nursing and Rehab Services to help our patients transition from the hospital to their home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** About Us Area End ****** -->
+
+  <div class="container">
+    <div class="dento-border clearfix"></div>
+  </div>
+
+  <!-- Dento Service Area Start -->
+  <section class="dento-service-area section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Service Content -->
+        <div class="col-12 col-lg-12">
+          <div class="service-content mb-30">
+            <!-- Section Heading -->
+            <div class="section-heading white">
+              <h2>OUR TEAM OF PROFESSIONALS </h2>
+              <div class="line"></div>
+            </div>
+            <div class="row">
+              <!-- Single Service -->
+              <div class="col-5 col-md-3">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/care.png' %}" alt="">
+                  <h6>WE CARE <small> <br>Kyakameena offers a holistic approach to recovery and wellness. We foster hope, remove barriers to treatment, and build better tomorrows.</small></h6>  
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-5 col-md-3">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/service.png' %}" alt="">
+                  <h6>WE SERVE <small> <br>We are professionals whose work helps to maintain the health of their patients or clients.</small></h6>  
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-5 col-md-3">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/help.png' %}" alt="">
+                  <h6>WE HELP <small> <br>The range of health care services a patient can receive at us is limitless. Our services are designed to help you regain and retain a level of independence.</small></h6>  
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-4 col-md-3">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/play.png' %}" alt="">
+                  <h6>WE PLAY <small> <br>It's also a wonderful activity to share enjoyment with your older adult. We play your favorite songs or set up a music player so patients can listen anytime.</small></h6>  
+                </div>
+              </div>
+              <!--Service end-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Service Area End -->
+
+
+
+  <!-- ***** Service Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Ensuring Quality Care Is Our Top Priority</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single team Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg-img/b.jpg' %}" alt="">
+            <!-- Content -->
+            <div class="dentist-content">
+              <!-- Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <p>WE CARE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single team Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg-img/r.jpg' %}" alt="">
+            <!-- Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <!-- Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <p>WE PLAY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single team Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg-img/f.jpg' %}" alt="">
+            <!-- Content -->
+            <div class="dentist-content">
+              <!-- Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <p>WE HELP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Team Area End ***** -->
+
+  <style>
+    .text   {
+       color: white;
+       text-shadow: 2px 2px 4px	#000000;
+     }
+
+    #text-border {
+      color: white;
+       text-shadow: 2px 2px 4px	#000000;
+    }
+     </style>
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% load static %}
+
+<!-- ***** Footer Area Start ***** -->
+<footer class="footer-area bg-img bg-gradient-overlay">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <h2>
+              <a href="{% url 'home' %}">
+                KYAKAMEENA  <br/>
+                CARE CENTER  </a>
+            <br/>
+            </h2>  
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i> 2131 Carleton St, Berkeley, CA 94704</p>
+              <p><i class="icon_phone"></i> (510) 843-2131</p>
+              <p><i class="icon_mail"></i>info@kyakameenahc.net</p>
+            </div>
+          </div>
+        </div>
+  
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg">
+                  <div class="single-footer-widget">
+                    <!-- Widget Title -->
+                    <h5 class="widget-title">Quick Link</h5>
+        
+                    <!-- Quick Links Nav -->
+                    <nav>
+                      <ul class="quick-links">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'services' %}">Services</a></li>
+                        <li><a href="{% url 'tour' %}">Tour</a></li>
+                        <li><a href="{% url 'carrer' %}">Carrer</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+  
+        <!--Map-->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="single-footer-widget">
+              <!-- Widget Title -->
+              <div class="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.9255551443675!2d-122.2647858241177!3d37.8620322806774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857c2a07ca34e9%3A0xdb32f2f171987ce0!2sKyakameena%20Care%20Center!5e0!3m2!1sen!2sus!4v1622098950200!5m2!1sen!2sus" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+              <!-- Quick Links Nav -->
+            </div>
+          </div>
+        
+    <!-- Copywrite Area -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+  
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+
+  
+  </body>
+  
+  </html>
